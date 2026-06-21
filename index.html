@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RPM Forum — игровое сообщество</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="topbar">
+		<div class="topbar-inner">
+			<a href="#/" class="logo">
+				<span class="logo-mark">R</span>
+				<span class="logo-text">RPM<span>Forum</span></span>
+			</a>
+			<nav class="topnav">
+				<a href="#/">Главная</a>
+				<a href="#/new">Новые сообщения</a>
+				<a href="#/members">Участники</a>
+				<a href="#/rules">Правила</a>
+			</nav>
+			<div class="search-box">
+				<svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M9.5 3a6.5 6.5 0 1 0 4.03 11.6l4.93 4.94 1.42-1.42-4.94-4.93A6.5 6.5 0 0 0 9.5 3zm0 2a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9z"/></svg>
+				<input type="text" id="searchInput" placeholder="Поиск по форуму...">
+			</div>
+			<div class="user-actions" id="userActions"></div>
+		</div>
+	</header>
+
+	<main class="container" id="app"></main>
+
+	<footer class="footer">
+		<div class="container footer-inner">
+			<div>
+				<strong>RPM Forum</strong> · Демонстрационный шаблон игрового сообщества<br>
+				Сделано на чистом HTML / CSS / JS
+			</div>
+			<div class="footer-links">
+				<a href="#/rules">Правила</a>
+				<a href="#/">Контакты</a>
+				<a href="#/">Помощь</a>
+				<a href="#/admin" style="opacity:.5">Админка</a>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal-overlay" id="modalOverlay" hidden>
+		<div class="modal" id="modal"></div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>
